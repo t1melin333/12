@@ -1,5 +1,4 @@
 <?php
-
 function getElenco($filme, $callBack) {
     $elenco = [];
     foreach ($filme as $key => $values) {

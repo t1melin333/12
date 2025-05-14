@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
     <title>Document</title>
 </head>
 <body>
@@ -10,21 +11,22 @@
     require_once 'func.php';
     require_once 'dados.php'; 
     ?>
-
+<ul class="formulario">
+<select name="Filme" id="filmes" class="form">
 <form  method="get" id="formEscolha">
-        <select name="Filme" id="filmes">
-            <option value=''>...</option>
+            <option value='formulario' class="birulinha">Escolha um Filme</option>
             <?php
                 getElenco($filmes, function($elenco){
                     var_dump($elenco);
                     foreach ($elenco as $elenco) {
                         echo "<option value='{$elenco}'>{$elenco}</option>";
-                        echo "<button></button>";
                     }
                 });
             ?>
         </select>
 </form>
+</ul>
+
 <ul>
     <?php
      if(isset($_GET['elenco'])){

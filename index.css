@@ -1,0 +1,31 @@
+body{
+    background-color: rgb(12, 31, 53);
+    display: flex;
+    justify-content: center;
+    margin-top: 20%;
+}
+
+.form{
+     border-color: black;
+     background-color: rgb(22, 81, 136);
+     color: white;
+     border-radius: 20;
+     justify-content: center;
+     align-items: center;
+     width: 100vh;
+     height: 70px;
+}
+
+option{
+    text-align: center;
+}
+
+
+
+.formEscolha{
+    background-color: aqua;
+}
+
+.li{
+    background-color: aqua;
+}
